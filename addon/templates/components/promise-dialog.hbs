@@ -1,5 +1,3 @@
-{{#if (if (and dialogType options.type) (eq dialogType options.type) true)}}
-  {{#if promise}}
-    {{yield resolve reject this}}
-  {{/if}}
+{{#if isActive}}
+  {{yield resolve reject this}}
 {{/if}}
