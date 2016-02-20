@@ -1,6 +1,9 @@
-# Ember-promise-dialog
+# Ember Promise Dialog
 
-This README outlines the details of collaborating on this Ember addon.
+[![npm version](https://badge.fury.io/js/ember-promise-dialog.svg)](http://badge.fury.io/js/ember-promise-dialog)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-promise-dialog.svg)](http://emberobserver.com/addons/ember-promise-dialog)
+
+A set of services and components for working with UI dialogs.
 
 ## Installation
 

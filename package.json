@@ -1,7 +1,7 @@
 {
   "name": "ember-promise-dialog",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A set of services and components for working with UI dialogs.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,9 +11,9 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/rtablada/ember-promise-dialog",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.1.1"
   },
   "author": "",
   "license": "MIT",
@@ -29,7 +29,9 @@
     "ember-cli-qunit": "^1.2.1",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.0.0",
+    "ember-cli-toolbelts": "0.3.3",
     "ember-cli-uglify": "^1.2.0",
+    "ember-code-snippet": "1.1.3",
     "ember-data": "^2.3.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-disable-proxy-controllers": "^1.0.1",
