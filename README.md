@@ -24,17 +24,28 @@ export default Ember.Route.extend({
   dialog: Ember.inject.service(),
 
   actions: {
-    createUser(formData) {
-      const user = this.store.createRecord('user', formData);
-
-      user.save.then(() => {
-        this.get('dialog').createDialog({
-          message: 'The user has been saved to the server.'
-        });
+    deleteUser(user) {
+      this.get('dialog').createDialog({
+        message: 'The user has been saved to the server.'
+      }).then(() => {
+        user.destroyRecord();
       });
     }
   }
 });
+```
+
+### Showing a Dialog
+
+The contents of a `promise-dialog` components will be yielded only if there is a current promise in the `dialog` service.
+
+```htmlbars
+{{#promise-dialog as |resolve reject dialog|}}
+  <h3>{{dialog.message}}</h3>
+
+  <button onclick={{action reject}}>Cancel</button>
+  <button onclick={{action resolve}}>Ok</button>
+{{/promise-dialog}}
 ```
 
 ## Contributing
